@@ -1,0 +1,196 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  /* background-color: #f5f5f5; */
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 10px 25px 15px 25px;
+  background-color: #ffffff;
+  /* border-bottom: 1px solid #000000; */
+  z-index: 1;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.05);
+}
+.done {
+  position: fixed;
+  display: inline-block;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 25px 50px;
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 100px;
+  font-weight: 600;
+  opacity: 0;
+}
+.flex_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: left;
+  /* border: 1px solid darkblue; */
+}
+.go_btn {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: right;
+  align-items: end;
+  /* border: 1px solid violet; */
+}
+.papago {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  background-color: #00a1ff;
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  /* border: 1px solid #333333; */
+}
+.g_sheet {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  background-color: #0f9d58;
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  /* border: 1px solid #333333; */
+}
+.boxhero {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  background-color: #4f67ff;
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  /* border: 1px solid #333333; */
+}
+
+.filter_box {
+  box-sizing: border-box;
+}
+.show {
+  transition: 0.3s ease;
+  opacity: 1;
+}
+.hide {
+  transition: 0.2s ease;
+  opacity: 0;
+}
+
+#search {
+  width: 250px;
+  height: 45px;
+  text-indent: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.fa-magnifying-glass {
+  position: relative;
+  right: 35px;
+}
+
+#wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+  margin-top: 15px;
+}
+.box {
+  display: inline-block;
+  width: 40%;
+  background-color: #fff;
+  border: 1px solid black;
+  /* border-radius: 20px; */
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  box-sizing: content-box;
+}
+.short {
+  width: 28% !important;
+}
+
+span {
+  padding: 7px 10px;
+  border: none;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 3px;
+}
+.f_btn {
+  border: none;
+  border-radius: 50px;
+  height: 45px;
+  width: 115px;
+}
+
+.H, button.h /* 인사말 */ {
+  background-color: #e2f0d9;
+}
+.E, button.e /* 유통기한 */ {
+  background-color: #e1ebf7;
+}
+.D, button.d /* 배송 */ {
+  background-color: #ede3ee;
+}
+.A, button.a /* 정품 */ {
+  background-color: #fcf9da;
+}
+.C, button.c /* 불만 */ {
+  background-color: #fcdfd7;
+}
+.G, button.g /* 고객요청 */ {
+  background-color: #f8e0c6;
+}
+.B, button.b /* 마무리인사 */ {
+  background-color: #eaeaea;
+}
+
+button.all:hover {
+  background-color: #c0c0c0;
+}
+button.h:hover {
+  background-color: #b5c0ae;
+}
+button.e:hover {
+  background-color: #b4bcc6;
+}
+button.a:hover {
+  background-color: #cac7ae;
+}
+button.d:hover {
+  background-color: #beb6be;
+}
+button.c:hover {
+  background-color: #cab2ac;
+}
+button.g:hover {
+  background-color: #c6b39e;
+}
+button.b:hover {
+  background-color: #bbbbbb;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 900;
+}
+button {
+  width: 100px;
+  height: 50px;
+}
