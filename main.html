@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THEGABA_CS_INFORM</title>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CS 간편Copy.css" />
+    <script type="text/javascript" src="CS 간편Copy.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="flex_box">
+        <div class="title">
+          <h1>THEGABA_CS_INFORM</h1>
+        </div>
+        <div class="go_btn">
+          <a
+            class="papago"
+            href="https://papago.naver.com/?sk=auto&tk=ko"
+            target="_blank"
+          >
+            Naver translator
+          </a>
+          <a
+            class="g_sheet"
+            href="https://docs.google.com/spreadsheets/d/1urAKsCzVAkZ6IuvH_AjB6m88orkuWXz7k5-3O5MY4fc/edit#gid=848773093"
+            target="_blank"
+          >
+            Product Expire Date
+          </a>
+          <a
+            class="boxhero"
+            href="https://web.boxhero-app.com/team/142520/mode/0"
+            target="_blank"
+          >
+            BoxHero Product Stock
+          </a>
+        </div>
+      </div>
+      <div class="done">Copy</div>
+      <div class="flex_box">
+        <div class="filter_btn">
+          <button class="f_btn all" data-filter=".all">all</button>
+          <button class="f_btn h" data-filter=".h">Greeting</button>
+          <button class="f_btn e" data-filter=".e">Expire Date</button>
+          <button class="f_btn a" data-filter=".a">Authentic</button>
+          <button class="f_btn d" data-filter=".d">Logistics/Delivery</button>
+          <button class="f_btn c" data-filter=".c">Wrong/Missing Items</button>
+          <button class="f_btn g" data-filter=".g">Customer request (inventory)</button>
+          <button class="f_btn b" data-filter=".b">Closing</button>
+        </div>
+        <div class="srh_box">
+          <input class="srh" id="search" type="text" placeholder="Search.." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </header>
+
+    <div id="wrap">
+      <div class="box short all h e a d c g b" data-type="all h">
+        <span class="H">Greeting</span>
+        <p>Hello! Thank you for your inquiry.</p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Hello! Thank you for your inquiry.');"
+        >
+          English
+        </button>
+        <button class="copy" onclick="copyToClipboard('您好！谢谢您的咨询。');">
+          Chinese(Simplified)
+        </button>
+        <button class="copy" onclick="copyToClipboard('您好！謝謝您的諮詢。');">
+          Traditional Chinese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Xin chào! Cảm ơn vì đã hỏi.');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Halo! Terima kasih atas pertanyaannya.');"
+        >
+          Indonesian
+        </button>
+      </div>
+      <div class="box short all h e a d c g b" data-type="all h">
+        <span class="H">Greeting</span>
+        <p>Hello! Thank you for your order.</p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Hello! Thank you for your order.');"
+        >
+          English
+        </button>
+        <button class="copy" onclick="copyToClipboard('您好！谢谢您的订单。');">
+          Chinese(Simplified)
+        </button>
+        <button class="copy" onclick="copyToClipboard('您好！謝謝您的訂單。');">
+          Traditional Chinese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Xin chào! Cảm ơn vì đã gọi món.');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Halo! Terima kasih atas pesanannya.');"
+        >
+          Indonesian
+        </button>
+      </div>
+      <div class="box short all h e a d c g b" data-type="all h b">
+        <span class="B">Closing</span>
+        <p>Thank you! Have a nice day :)</p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Thank you! Have a nice day :)');"
+        >
+          English
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('谢谢！祝你度过愉快的一天:)');"
+        >
+          Chinese(Simplified)
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('謝謝！祝你度過愉快的一天:)');"
+        >
+          Traditional Chinese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Cảm ơn các bạn! Chúc một ngày tốt lành :)');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Terima kasih! Semoga harimu menyenangkan :)');"
+        >
+          Indonesian
+        </button>
+      </div>
+      <div class="box all h e" data-type="all h e">
+        <span class="H">Greeting</span>
+        <span class="E">Expire Date</span>
+        <p>
+          Hello! Thank you for your inquiry.
+          <br />
+          The expiration date is
+        </p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Hello! Thank you for your inquiry. The expiration date is ');"
+        >
+          English
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好！谢谢您的咨询。 保质期是');"
+        >
+          Chinese(Simplified)
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好！謝謝您的諮詢。 保質期是');"
+        >
+          Traditional Chinese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Xin chào! Cảm ơn vì đã hỏi. Hạn sử dụng là ');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Halo! Terima kasih atas pertanyaannya. Tanggal kedaluwarsa adalah ');"
+        >
+          Indonesian
+        </button>
+      </div>
+      <div class="box all h d" data-type="all h d">
+        <span class="H">Greeting</span>
+        <span class="D">Logistics/Delivery</span>
+        <p>
+          Hello! Thank you for your order. 
+          <br />
+          I’ll send it to you as soon as possible :)
+        </p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Hello! Thank you for your order. I’ll send it to you as soon as possible :)');"
+        >
+          English
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好！谢谢您的订单。 我会尽快发给您:)');"
+        >
+          Chinese(Simplified)
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好！謝謝您的訂單。 我會盡快發給您:)');"
+        >
+          Traditional Chinese
+        </button>
+        <button
+          v
+          onclick="copyToClipboard('Xin chào! Cảm ơn vì đã gọi món. Tôi sẽ gửi nhanh nhất có thể :)');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Halo! Terima kasih atas pesanannya. Kami akan mengirimkannya kepada Anda sesegera mungkin:)');"
+        >
+          Indonesian
+        </button>
+      </div>
+      <div class="box all d" data-type="all d">
+        <span class="D">Logistics/Delivery</span>
+        <p>
+          ※Malaysia※
+          <br />
+          Hello! Thank you for your inquiry. Shipping starts in Korea, and within 1-2 business days of order confirmation!
+          <br />
+          It usually takes 8 to 12 days to arrive in West Malaysia and 12 to 17 days to get to East Malaysia.
+        </p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Hello! Thank you for your inquiry. Shipping starts in Korea, and within 1-2 business days of order confirmation! It usually takes 8 to 12 days to arrive in West Malaysia and 12 to 17 days to get to East Malaysia.');"
+        >
+          English
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好！谢谢您的咨询。 配送从韩国出发，确定订单后1-2个工作日内开始配送！ 到达西马来西亚通常需要8~12天,到达东马来西亚通常需要12~17天左右。');"
+        >
+          Chinese(Simplified)
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好！謝謝您的諮詢。 配送從韓國出發，確定訂單後1-2個工作日內開始配送！ 到達西馬來西亞通常需要8~12天,到達東馬來西亞通常需要12~17天左右。');"
+        >
+          Traditional Chinese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Xin chào! Cảm ơn vì đã hỏi. Giao hàng sẽ xuất phát từ Hàn Quốc, sau khi xác nhận đặt hàng, giao hàng sẽ bắt đầu trong vòng 1-2 ngày kể từ ngày kinh doanh! Thường mất 8 đến 12 ngày để đến Tây Malaysia, và thường mất 12 đến 17 ngày để đến Đông Malaysia.');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Halo! Terima kasih atas pertanyaannya. Pengiriman akan berangkat dari Korea, dan pengiriman akan dimulai dalam 1-2 hari kerja setelah pesanan dikonfirmasi! Biasanya butuh waktu 8 sampai 12 hari untuk sampai ke Malaysia Barat dan biasanya 12 sampai 17 hari untuk sampai ke Malaysia Timur.');"
+        >
+          Indonesian
+        </button>
+      </div>
+      <div class="box all d" data-type="all d">
+        <span class="D">배송</span>
+        <p>
+          ※Delivery information for Southeast Asia other than Malaysia※
+          <br />
+          Hello! Thank you for your inquiry. Shipping starts in Korea, and within 1-2 business days of order confirmation!
+          <br />
+          It takes about 7 to 12 days on average for delivery.
+        </p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Hello! Thank you for your inquiry. Shipping starts in Korea, and within 1-2 business days of order confirmation! It takes about 7 to 12 days on average for delivery.');"
+        >
+          English
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好！谢谢您的咨询。 配送从韩国出发，确定订单后1-2个工作日内开始配送！ 配送平均需要7天到12天左右。');"
+        >
+          Chinese(Simplified)
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好！謝謝您的諮詢。 配送從韓國出發，確定訂單後1-2個工作日內開始配送！ 配送平均需要7天到12天左右。');"
+        >
+          Traditional Chinese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Xin chào! Cảm ơn vì đã hỏi. Giao hàng sẽ xuất phát từ Hàn Quốc, sau khi xác nhận đặt hàng, giao hàng sẽ bắt đầu trong vòng 1-2 ngày kể từ ngày kinh doanh! Việc vận chuyển trung bình mất khoảng 7 đến 12 ngày.');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Halo! Terima kasih atas pertanyaannya. Pengiriman akan berangkat dari Korea, dan pengiriman akan dimulai dalam 1-2 hari kerja setelah pesanan dikonfirmasi! Pengiriman rata-rata memakan waktu 7 sampai 12 hari.');"
+        >
+          Indonesian
+        </button>
+      </div>
+      <div class="box all a" data-type="all a">
+        <span class="A">Authentic</span>
+        <p>Yes, all the products we sell are 100% Authentic.</p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Yes, all the products we sell are 100% Authentic.');"
+        >
+          English
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('是的，我们销售的产品都是正品。');"
+        >
+          Chinese(Simplified)
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('是的，我們銷售的產品都是正品。');"
+        >
+          Traditional Chinese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Đúng vậy, tất cả các sản phẩm chúng tôi bán là chính hãng.');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Benar sekali, semua produk yang kami jual adalah asli.');"
+        >
+          Indonesian
+        </button>
+      </div>
+      <div class="box all c" data-type="all c">
+        <span class="C">Wrong/Missing Items</span>
+        <p>Hello, I’m sorry for inconvenience. ~ Request invoices.</p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Hello, I’m sorry for inconvenience. I think you must have been surprised when you reiceived your parcel. To check the problem faster, could you show me the two invoices attached to the package and the product you received?');"
+        >
+          English
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好，很抱歉给您带来不便。我觉得收到商品的时候应该很惊讶。为了更快地确认问题，能给我看一下收到的商品和快递上的两个发票吗？');"
+        >
+          Chinese(Simplified)
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好，很抱歉給您帶來不便。我覺得收到商品的時候應該很驚訝。爲了更快地確認問題，能給我看一下收到的商品和快遞上的兩個發票嗎？');"
+        >
+          Traditional Chinese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Xin chào, xin lỗi vì sự bất tiện này. Tôi nghĩ chắc hẳn bạn đã rất ngạc nhiên khi nhận được sản phẩm. Để xác định vấn đề nhanh hơn, bạn vui lòng cho tôi xem hai hóa đơn kèm theo sản phẩm và đơn hàng bạn nhận được không?');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Halo, mohon maaf atas ketidaknyamanannya. Saya pikir Anda pasti sangat terkejut ketika Anda menerima produk tersebut. Untuk mengidentifikasi masalah lebih cepat, dapatkah Anda menunjukkan kepada saya dua faktur yang dilampirkan pada produk dan kurir yang Anda terima?');"
+        >
+          Indonesian
+        </button>
+      </div>
+      <div class="box all c" data-type="all c">
+        <span class="C">Wrong/Missing Items</span>
+        <p>Hello, the confirmation has been completed, put it in the next order together?</p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Hello, the confirmation has been completed. Thank you for waiting. I’m so sorry for the inconvenience. We want to send you the missing item, but we can’t deliver it without a new order. Can I put it in the next order together?');"
+        >
+          English
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好，确认完毕。 谢谢您的等待。 很抱歉给您带来不便。 我们想寄送遗漏的物品，但如果我们没有新的订单，就无法配送。 可以一起下订单吗？');"
+        >
+          Chinese(Simplified)
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好，確認完畢。 謝謝您的等待。 很抱歉給您帶來不便。 我們想寄送遺漏的物品，但如果我們沒有新的訂單，就無法配送。 可以一起下訂單嗎？');"
+        >
+          Traditional Chinese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Xin chào, đã xác nhận xong. Cảm ơn các bạn đã chờ đợi. Tôi thực sự xin lỗi vì đã gây bất tiện. Chúng tôi muốn gửi hàng hóa bị thiếu nhưng chúng tôi không thể giao hàng nếu không có đơn đặt hàng mới. Tôi có thể cho vào cùng với đơn đặt hàng tiếp theo được không?');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Halo, konfirmasi selesai. Terima kasih telah menunggu. Maaf atas ketidaknyamanan ini. Kami ingin mengirimkan barang yang hilang, tapi kami tidak bisa mengirimkannya jika tidak ada pesanan baru. Bolehkah saya memasukkannya ke pesanan berikutnya?');"
+        >
+          Indonesian
+        </button>
+      </div>
+      <div class="box all g" data-type="all g">
+        <span class="G">Customer request (inventory)</span>
+        <p>
+          I’m sorry, but all the products we sell have already been offered at the lowest price, so no further individual discounts are available.
+        </p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('I’m sorry, but all the products we sell have already been offered at the lowest price, so no further individual discounts are available.');"
+        >
+          English
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('对不起。我们销售的所有产品已经以最低价再加工，不能再单独打折了。');"
+        >
+          Chinese(Simplified)
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('對不起。我們銷售的所有產品已經以最低價再加工，不能再單獨打折了。');"
+        >
+          Traditional Chinese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Xin lỗi. Tất cả các sản phẩm được bán bởi chúng tôi đã được bán với giá thấp nhất, vì vậy không thể giảm giá thêm cho từng cá nhân.');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Maaf. Semua produk yang kami jual telah dijual dengan harga terendah, jadi diskon individu lebih lanjut tidak memungkinkan.');"
+        >
+          Indonesian
+        </button>
+      </div>
+      <div class="box all e" data-type="all e">
+        <span class="E">Expire Date</span>
+        <p>
+          Hello! Thank you for your inquiry. Probiotics have a maximum shelf life of one year.
+          <br />
+          I send you the latest one because there is a lot of new stock :)
+        </p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Hello! Thank you for your inquiry. Probiotics have a maximum shelf life of one year. I send you the latest one because there is a lot of new stock :)');"
+        >
+          English
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好! 谢谢您的询问. 益生菌的保质期最长为一年。 因为新货很多，所以寄给你最新的:）');"
+        >
+          Chinese(Simplified)
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('您好! 謝謝您的詢問. 益生菌的保質期最長爲一年。 因爲新貨很多，所以寄給你最新的:）');"
+        >
+          Traditional Chinese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Xin chào! Cảm ơn vì câu hỏi của bạn. Vi khuẩn có thời hạn sử dụng tối đa là một năm. Tôi gửi cho bạn cái mới nhất vì có rất nhiều hàng tồn kho mới :)');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Terima kasih atas pertanyaanmu. Probiotik memiliki umur simpan maksimum satu tahun. Saya mengirimkan yang terbaru karena ada banyak stok baru :)');"
+        >
+          Indonesian
+        </button>
+      </div>
+      <div class="box all g" data-type="all g">
+        <span class="G">Customer request (inventory)</span>
+        <p>
+         We can’t sure to say now when it would be avaiable again.
+          <br />
+          But we will try to get it asap, please wait a little bit.
+        </p>
+        <button
+          class="copy"
+          onclick="copyToClipboard('We can’t sure to say now when it would be avaiable again. But we will try to get it asap, please wait a little bit.');"
+        >
+          English
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('我们现在还不能肯定什么时候可以再使用。 但是我们会尽快收到，请稍等。');"
+        >
+          Chinese(Simplified)
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('我們現在還不能肯定什麼時候可以再使用。 但是我們會盡快收到，請稍等。');"
+        >
+          Traditional Chinese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Chúng tôi không thể chắc chắn để nói bây giờ khi nào nó sẽ có lại. Nhưng chúng tôi sẽ cố gắng để có được nó càng sớm càng tốt, hãy chờ một chút nhé.');"
+        >
+          Vietnamese
+        </button>
+        <button
+          class="copy"
+          onclick="copyToClipboard('Kita tidak bisa yakin untuk mengatakan sekarang kapan itu akan tersedia lagi. Tapi kami akan mencoba untuk mendapatkannya secepatnya, silakan tunggu sebentar.');"
+        >
+          Indonesian
+        </button>
+      </div>
+
+      <div class="box all h e a d c g b" data-type="all h e a d c g b">
+        <span class="H">Greeting</span>
+        <span class="E">Expire Date</span>
+        <span class="A">Authentic</span>
+        <span class="D">Logistics/Delivery</span>
+        <span class="C">Wrong/Missing Items</span>
+        <span class="G">Customer request (inventory)</span>
+        <span class="B">Closing</span>
+        <p>Copy</p>
+        <button class="copy" onclick="copyToClipboard('');">English</button>
+        <button class="copy" onclick="copyToClipboard('');">
+          Chinese(Simplified)
+        </button>
+        <button class="copy" onclick="copyToClipboard('');">
+          Traditional Chinese
+        </button>
+        <button class="copy" onclick="copyToClipboard('');">Vietnamese</button>
+        <button class="copy" onclick="copyToClipboard('');">
+          Indonesian
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
