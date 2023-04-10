@@ -136,9 +136,9 @@ span {
   border: none;
   border-radius: 50px;
   height: 45px;
-  width: 115px;
+  width: 125px;
+  vertical-align: middle;
 }
-
 .H, button.h /* 인사말 */ {
   background-color: #e2f0d9;
 }
@@ -193,4 +193,5 @@ p {
 button {
   width: 100px;
   height: 50px;
+  vertical-align: middle;
 }
