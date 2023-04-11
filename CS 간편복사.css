@@ -78,6 +78,17 @@ h1 {
   border-radius: 10px;
   /* border: 1px solid #333333; */
 }
+.kr {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  background-color: #6638B6;
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  /* border: 1px solid #333333; */
+}
 
 .filter_box {
   box-sizing: border-box;
